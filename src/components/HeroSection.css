@@ -1,0 +1,59 @@
+.hero {
+    display: flex;
+    flex-wrap: wrap;  /* let images stack on smaller screens */
+    /* background-color: #efefef; */
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    /* optional: if you want each “hero” to be full screen:
+       min-height: 100vh; 
+    */
+  }
+  
+  /* Large image on the left */
+  .hero .hero-img-left {
+    flex: 2;    /* take more space */
+    max-width: 700px;
+    margin: 0 1rem;
+  }
+  
+  /* Smaller image on the right */
+  .hero .hero-img-right {
+    flex: 1;    /* narrower column */
+    max-width: 500px;
+    margin: 0 1rem;
+  }
+  
+  /* Center the text below or to the side, 
+     but in your screenshot it’s horizontally below the big image. 
+     Let's put it in a full-width row beneath for clarity. */
+  .hero-text {
+    width: 100%;
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 1.5rem;
+    
+    font-family: sans-serif;
+    color: #111;
+  }
+  
+  /* Make sure the images are responsive */
+  .hero img {
+    width: 100%;
+    display: block;
+    object-fit: cover; 
+    /* Add a border or highlight if you want that purple border effect 
+       from your screenshot. Example: 
+       border: 5px solid purple; 
+    */
+  }
+  
+  /* On smaller screens, let them stack: */
+  @media (max-width: 768px) {
+    .hero .hero-img-left,
+    .hero .hero-img-right {
+      flex: 1 1 100%;
+      max-width: 100%;
+      margin: 0.5rem 0;
+    }
+  }

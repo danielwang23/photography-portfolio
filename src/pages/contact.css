@@ -1,0 +1,203 @@
+/* Contact.css */
+
+/* =============== 1) Hero Section  =============== */
+
+.contact-hero {
+    text-align: center;
+    background-color: #fff; /* White background */
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+
+  }
+  
+  .contact-heading {
+    font-family: "Times New Roman", serif;
+    font-size: 2rem;
+    /* text-transform: uppercase; */
+    margin-bottom: 1rem;
+    color: #8D7B68;
+  }
+  
+  .contact-hero-image {
+    width: 90%;
+    max-width: 10000px;
+    height: auto;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+    /* You can add a border or box-shadow if you like: 
+       border: 2px solid #ccc; 
+    */
+  }
+  
+  /* =============== 2) Main Container  =============== */
+  
+  .contacts-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    color: #111;
+    max-width: 1200px;  /* Keep content narrower for bigger margins */
+    margin: 0 auto;     /* Center horizontally */
+    padding: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* LEFT SIDE */
+  .contacts-left {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-block {
+    margin-bottom: 6rem;
+  }
+  
+  .contact-block h3 {
+    font-family: "Times New Roman", serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-block p {
+    margin: 0.25rem 0;
+    font-family: "Times New Roman", serif;
+    font-size: 1.5rem;
+  }
+  
+  /* Thin horizontal line between text blocks */
+  .divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
+  }
+  
+  /* RIGHT SIDE */
+  .contacts-right {
+    flex: 1;
+    min-width: 400px;
+    margin-bottom: 2rem;
+  }
+  
+  .contacts-right h2 {
+    font-family: "Times New Roman", serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contacts-right p {
+    font-family: "Times New Roman", serif;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  /* =============== 3) Contact Form =============== */
+  
+  .contact-form {
+    padding: 1.5rem;
+    border: 2px solid #b2c2ad; /* Sage green border */
+    background-color: #fff;    /* Keep background white */
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .form-row.full-width {
+    width: 100%;
+  }
+  
+  .form-row label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: "Times New Roman", serif;
+    font-size: 1.1rem;
+  }
+  
+  .form-row input,
+  .form-row textarea {
+    padding: 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 1px solid #b2c2ad; /* Sage green outlines for fields, too */
+    background-color: #fafafa;
+    color: #111;
+  }
+  
+  /* Submit button */
+  .send-button {
+    background: none;
+    color: #111;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #b2c2ad; /* sage green border */
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: "Times New Roman", serif;
+  }
+  
+  .send-button:hover {
+    background: #b2c2ad; 
+    color: #fff;
+  }
+  
+  /* RESPONSIVE: stack columns at smaller screens */
+  @media (max-width: 768px) {
+    .contacts-container {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    .contacts-left,
+    .contacts-right {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  /* =============== 4) Bottom Icons & Copyright =============== */
+  .contact-bottom {
+    text-align: center;
+    background-color: #fff; /* or #f9f9f9 if you want a slight shade */
+    padding: 1rem 0 2rem;
+  }
+  
+  .social-icons {
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  
+  .icon {
+    margin: 0 0.5rem;
+    font-size: 2.5rem; /* Increase or decrease to taste */
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #111;
+  }
+  
+    /* Hover effect for icons */
+    .icon:hover {
+        color: #b2c2ad; /* Sage highlight on hover, for instance */
+    }
+  
+
+    #pixieset {
+        font-size: 1.5rem;
+    }
+
+
+  copyright {
+    font-family: "Times New Roman", serif;
+    font-size: 0.9rem;
+  }
+  
